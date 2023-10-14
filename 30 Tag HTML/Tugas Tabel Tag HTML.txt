@@ -1,6 +1,49 @@
+<a href="erinfajrinnugraha.free.nf">Erin Fajrin Nugraha</a>
+
+<abbr title="Erin Fajrin Nugraha">EFN</abbr>
 
 <b>Example</b> 
 
 <big></big>
 
 <p>Hai apa kabar?<br />Kabar Erin Fajrin Nugraha baik.</p>
+
+<address>
+    Diketik oleh
+    <a href="mailto:erinfajrinnugraha@gmail.com"> Erin Fajrin Nugraha </a>
+</address>
+
+<audio controls>
+    <source src="Yellow.mp3" />
+</audio>
+
+<p>Hai apa kabar?<br />Kabar Erin Fajrin Nugraha baik.</p>
+
+
+<big>Erin Fajrin Nugraha</big>
+
+<center>
+        <p>Hallo semuanya perkenalkan saya Erin Fajrin Nugraha</p>
+      </center>
+
+<dl>
+    <dt>Melihat</dt>
+    <dd>Menggunakan indra penglihatan untuk melihat</dd>
+</dl>
+
+Didepan terdapaat <em>Truck pasir </em>bermuatan penuh.
+
+
+<embed src="FastForward.mp4" />
+
+<font face="Times New Roman">Erin Fajrin Nugraha</font>
+
+<form action="mailto:erinfajrinnugraha@gmail.com">
+        Name: <input name="Name" value="" size="2 `0" /> <br />
+        Email: <input name="Email" value="" size="10" /> <br />
+        <center><input type="submit" /></center>
+      </form>
+
+<h1>Erin Fajrin Nugraha</h1>
+<h2>Erin Fajrin Nugraha</h2>
+<h3>Erin Fajrin Nugraha</h3>
