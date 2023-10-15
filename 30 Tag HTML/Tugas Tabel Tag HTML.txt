@@ -47,3 +47,26 @@ Didepan terdapaat <em>Truck pasir </em>bermuatan penuh.
 <h1>Erin Fajrin Nugraha</h1>
 <h2>Erin Fajrin Nugraha</h2>
 <h3>Erin Fajrin Nugraha</h3>
+
+<iframe
+    src="https://en.wikipedia.org/wiki/Suzuki_GSX_series"
+    width="600px"
+    height="500px">
+</iframe>
+
+<button type="button">Pencet Tombol Ini!</button>
+
+Erin Fajrin Nugraha memilih :
+<select>
+    <option selected>Suzuki Hayabusa</option>
+    <option>Suzuki Katana</option>
+    <option>Suzuki GSXR-1000R</option>
+</select>
+
+<u>Erin Fajrin Nugraha</u>
+
+<p>Erin Fajrin <sup>Nugraha</sup></p>
+
+<p>Erin Fajrin <sub>Nugraha</sub></p>
+
+<small>Erin Fajrin Nugraha</small>
