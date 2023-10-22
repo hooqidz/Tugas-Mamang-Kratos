@@ -6,6 +6,12 @@
       body {
         text-decoration: none;
       }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
     </style>
     <link rel="shortcut icon" href="../img/favicon.ico" />
   </head>
@@ -64,11 +70,139 @@
           /></a>
         </td>
         <td colspan="6" valign="top">
-          <iframe
-            src="https://pmb.unper.ac.id/pmb"
-            width="1000px"
-            height="1000px"
-          ></iframe>
+          <h1>FORMULIR PENDAFTARAN</h1>
+          <hr />
+          <p>
+            Isikan semua field data diri sesuai dengan informasi pribadi anda
+            (harap diperhatikan semua data diri dalam formulir ini tidak bisa
+            dirubah sampai anda dinyatakan lulus dan menjadi mahasiswa/i unper,
+            kecuali password). Silahkan diisi dengan data diri yang benar dan
+            valid.
+          </p>
+          <div style="margin-left: 20px; margin-right: 20px">
+            <table border="1" width="100%">
+              <td>
+                <label for="nama">Nama</label><br />
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="Masukkan Nama"
+                  maxlength="35"
+                  required
+                />
+                <br /><br />
+                <label for="nisn">NISN</label><br />
+                <input
+                  type="number"
+                  id="nisn"
+                  name="nisn"
+                  placeholder="Masukkan NISN"
+                  required
+                />
+                <br /><br />
+                <label for="nik">NIK</label><br />
+                <input
+                  type="number"
+                  id="nik"
+                  name="nik"
+                  placeholder="Masukkan NIK"
+                  required
+                />
+                <br /><br />
+                <label for="tanggal_lahir"> Tanggal Lahir </label><br />
+                <input
+                  type="date"
+                  id="tanggal_lahir"
+                  name="tanggal_lahir"
+                  placeholder="Masukan Tanggal Lahir Anda"
+                  required
+                />
+                <br /><br />
+                <label for="tempat_lahir"> Tempat Lahir </label><br />
+                <input
+                  size="30"
+                  type="text"
+                  id="tempat_lahir"
+                  name="tempat_lahir"
+                  maxlength="35"
+                  placeholder="Masukan Tempat Lahir Anda"
+                  required
+                />
+                <br /><br />
+                <label for="no_hp">No Handphone</label><br />
+                <input
+                  type="number"
+                  id="no_hp"
+                  name="no_hp"
+                  placeholder="Masukkan No HP"
+                  required
+                />
+              </td>
+              <td width="50%">
+                <label for="tempat_sekolah">Kab/Kota Sekolah</label><br />
+                <input
+                  type="text"
+                  id="tempat"
+                  name="tempat"
+                  placeholder="Tempat Sekolah"
+                  maxlength="35"
+                  required
+                />
+                <br /><br />
+                <label for="jenis_kelamin">Jenis Kelamin</label>
+                <br />
+                <input
+                  type="radio"
+                  id="jenis_kelamin"
+                  name="jenis_kelamin"
+                  value="Laki-laki"
+                  required
+                />
+                Laki-laki
+                <br />
+                <input
+                  type="radio"
+                  id="jenis_kelamin"
+                  name="jenis_kelamin"
+                  value="Perempuan"
+                  required
+                />
+                Perempuan
+                <br /><br />
+                <label for="nama_ayah">Nama Ayah</label><br />
+                <input
+                  type="text"
+                  id="nama_ayah"
+                  name="nama_ayah"
+                  placeholder="Nama Ayah"
+                  maxlength="35"
+                  required
+                />
+                <br /><br />
+                <label for="nama_ayah">Nama Ibu</label><br />
+                <input
+                  type="text"
+                  id="nama_ibu"
+                  name="nama_ibu"
+                  placeholder="Nama Ibu"
+                  maxlength="35"
+                  required
+                />
+                <br /><br />
+                <label for="email">E-Mail</label><br />
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Masukkan Alamat Email"
+                  required
+                />
+              </td>
+            </table>
+          </div>
+
+          <br /><br />
         </td>
       </tr>
       <tr>
