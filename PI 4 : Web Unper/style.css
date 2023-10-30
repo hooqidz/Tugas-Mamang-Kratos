@@ -2,10 +2,6 @@ body {
   font: 100% Lucida Sans, Verdana;
   margin: 20px;
   line-height: 26px;
-  background-attachment: scroll;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(./img/bgUnper.png);
 }
 
 .container {
@@ -34,11 +30,10 @@ body {
 #menubar {
   width: 200px;
   float: left;
+  position: fixed;
 }
 
 #main {
-  background-color: rgba(8, 8, 8, 0.6);
-  color: white;
   padding: 10px;
   margin: 0 210px;
 }
@@ -83,7 +78,7 @@ body {
 }
 
 .menuitem:hover {
-  background-color: #b5b5b5;
+  background-color: #ffffff;
 }
 
 a {

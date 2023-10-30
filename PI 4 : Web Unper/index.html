@@ -3,11 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .icon {
+        margin-left: 10px;
+        width: 150px;
+        background-color: #f1f1f1;
+        border: 1px solid #d4d4d4;
+        border-radius: 5px;
+        color: black;
+        display: flex;
+        align-items: center;
+      }
+
+      .icon:hover {
+        background-color: #b5b5b5;
+      }
+    </style>
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <title>PI Pertemuan 4</title>
   </head>
   <body>
     <div class="container-wrapper">
-      <div id="top">
+      <div id="top" align="center">
+        <img src="img/logounper.png" alt="Gambar UNPER" width="100px" />
         <h1>Universitas Perjuangan</h1>
         <p>cageur, bageur, bener, pinter tur singer</p>
       </div>
@@ -15,17 +34,34 @@
       <div class="wrapper">
         <div id="menubar">
           <ul id="menulist">
-            <li class="menuitem"><a href="index.html">Home</a></li>
-            <li class="menuitem">
-              <a href="index.html">Struktur Organisasi</a>
+            <li
+              class="menuitem"
+              style="background-color: #04aa6d; color: white; font-weight: bold"
+            >
+              <a href="index.html">Home</a>
             </li>
-            <li class="menuitem"><a href="index.html">Visi Misi</a></li>
-            <li class="menuitem"><a href="index.html">Fakulatas</a></li>
-            <li class="menuitem"><a href="index.html">BEM</a></li>
+            <li class="menuitem">
+              <a href="document/struktur.html">Struktur Organisasi</a>
+            </li>
+            <li class="menuitem">
+              <a href="document/visimisi.html">Visi Misi</a>
+            </li>
+            <li class="menuitem">
+              <a href="document/fakultas.html">Fakultas</a>
+            </li>
+            <li class="menuitem"><a href="document/bem.html">BEM</a></li>
+            <li class="menuitem">
+              <a href="document/pmb.html">PMB</a>
+            </li>
+            <li class="menuitem">
+              <a href="document/ukm.html">UKM</a>
+            </li>
           </ul>
         </div>
         <div id="main">
           <h1>Selamat Datang</h1>
+
+          <hr />
           <p>
             Universitas Perjuangan Tasikmalaya atau disingkat UNPER, adalah
             sebuah universitas swasta yang terletak di Kota Tasikmalaya, Jawa
@@ -63,11 +99,24 @@
           </ol>
         </div>
         <div id="sidebar">
-          <h3>Side-Bar</h3>
-          <p>
-            Anda dapat mengisi sidebar ini dengan konten apapun yang anda
-            inginkan
-          </p>
+          <div align="center">
+            <h3 style="color: black">Kontak dan Sosial Media</h3>
+          </div>
+          <hr />
+          <a href="mailto:perjuangan@unper.ac.id">
+            <div class="icon">
+              <img src="img/gmail.svg" alt="Gmail" />
+              Gmail
+            </div>
+          </a>
+          <br />
+          <a href="https://www.instagram.com/unper_official17/">
+            <div class="icon">
+              <img src="img/instagram.svg" alt="Instagram" /> Instagram
+            </div>
+          </a>
+
+          <hr />
         </div>
       </div>
     </div>
