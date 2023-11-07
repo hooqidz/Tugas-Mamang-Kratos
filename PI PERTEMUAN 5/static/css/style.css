@@ -1,0 +1,97 @@
+:root {
+  --red-retro: #e63946;
+  --white-cream: #f1faee;
+  --blue-ocean: #a8dadc;
+  --dark-ocean: #457b9d;
+  --deep-ocean: #1d3557;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Style tag body */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+/* Header/logo Judul */
+.header {
+  padding: 20px;
+  text-align: left;
+  background: var(--red-retro);
+  color: var(--white-cream);
+}
+
+.header_span {
+  color: var(--deep-ocean);
+}
+
+/* Style pada navigasi */
+.navbar {
+  display: flex;
+  padding: 5px;
+  background-color: var(--white-cream);
+  border: 1px solid var(--deep-ocean);
+}
+/* Style navigasi link */
+.navbar a {
+  color: var(--deep-ocean);
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--deep-ocean);
+  background-color: var(--blue-ocean);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+/* ubah warna link menu ketika disentuh */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Kolom container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/kiri kolom */
+
+/* Kolom utama */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.side {
+  flex: 30%;
+  background-color: var(--white-cream);
+  padding: 20px;
+}
+
+/* contoh gambar, untuk contoh saja */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+/* Tampilan responsive - ketika lebar layar kurang dari700px ,maka akan membuat
+dua kolom bertumpuk satu sama lain, bukan di samping satu sama lain */
+@media screen and (max-width: 700px) {
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar a {
+    margin: 0;
+    width: 100%;
+  }
+}

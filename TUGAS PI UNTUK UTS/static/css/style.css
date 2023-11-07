@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --retro-red: #fe0000;
+  --dark-grey: #7d7463;
+  --smoke-grey: #a8a196;
+  --light-cream: #f4e089;
+  --download-off: #5ba32b;
+  --download-on: #59bf40;
+}
+
+/* Style tag body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+/* Header/logo Judul */
+.header {
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  background: var(--dark-grey);
+  color: white;
+}
+
+.header h1 {
+  margin: 0px;
+  text-align: left;
+}
+
+.header .rin {
+  color: var(--light-cream);
+}
+
+/* Style box navigasi */
+.navbar {
+  display: flex;
+  background-color: var(--dark-grey);
+}
+
+.navbar input {
+  padding: 6px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 17px;
+}
+
+/* Style navigasi link */
+.navbar a {
+  width: 100px;
+  color: white;
+  padding: 5px;
+  margin-left: 20px;
+  border: 1px solid black;
+  background-color: grey;
+  border-radius: 5px 5px 0px 0px;
+  text-decoration: none;
+  text-align: center;
+}
+/* ubah warna link menu ketika disentuh */
+.navbar a:hover {
+  background-color: var(--smoke-grey);
+  color: black;
+}
+/* Kolom container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/kiri kolom */
+.side {
+  float: left;
+  flex: 30%;
+  background-color: var(--smoke-grey);
+  padding: 20px;
+}
+/* Kolom utama */
+.main {
+  flex: 70%;
+  background-color: white;
+  margin-left: 0px;
+  padding: 0;
+}
+/* contoh gambar, untuk contoh saja */
+.main-img {
+  background-color: #aaa;
+  width: fit-content;
+  padding: 20px;
+}
+
+.side-img {
+  background-color: red;
+  width: 200px;
+  padding: 20px;
+}
+.frame-buy {
+  vertical-align: bottom;
+  width: 200px;
+  height: 30px;
+  background-color: #aaa;
+  margin-left: 20px;
+}
+/* Button buy */
+button {
+  background-color: var(--download-off);
+  border: none;
+  margin-top: 0;
+  height: 30px;
+  width: 100px;
+  margin-left: 100px;
+}
+button:hover {
+  background-color: var(--download-on);
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+/* Tampilan responsive - ketika lebar layar kurang dari700px ,maka akan membuat
+dua kolom bertumpuk satu sama lain, bukan di samping satu sama lain */
+@media screen and (max-width: 700px) {
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar a {
+    width: 100%;
+    margin: 5px 0px;
+    border-radius: 5px;
+    text-align: left;
+  }
+
+  .navbar input {
+    text-align: center;
+    padding: 6px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 17px;
+  }
+}
