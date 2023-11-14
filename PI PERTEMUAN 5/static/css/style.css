@@ -4,6 +4,7 @@
   --blue-ocean: #a8dadc;
   --dark-ocean: #457b9d;
   --deep-ocean: #1d3557;
+  --green-on: #e9c46a;
 }
 
 * {
@@ -17,10 +18,15 @@ body {
 }
 /* Header/logo Judul */
 .header {
-  padding: 20px;
+  padding: 10px;
   text-align: left;
   background: var(--red-retro);
   color: var(--white-cream);
+}
+
+.header a {
+  margin: 0;
+  padding: 0;
 }
 
 .header_span {
@@ -65,27 +71,51 @@ body {
   padding: 20px;
 }
 
+.img {
+  display: flex;
+}
+
+.image_main {
+  margin: 20px;
+}
+
 .side {
   flex: 30%;
   background-color: var(--white-cream);
   padding: 20px;
+  border: 1px solid black;
+}
+
+.social_media a {
+  text-decoration: none;
+}
+
+.border_social {
+  display: flex;
+  border-radius: 5px;
+  margin-left: 20px;
+  width: 200px;
+  color: var(--white-cream);
+  background-color: var(--dark-ocean);
+}
+
+.border_social:hover {
+  color: var(--deep-ocean);
+  background-color: var(--green-on);
 }
 
 /* contoh gambar, untuk contoh saja */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
+
 /* Footer */
 .footer {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background: #ddd;
+  border: 1px solid black;
 }
-/* Tampilan responsive - ketika lebar layar kurang dari700px ,maka akan membuat
-dua kolom bertumpuk satu sama lain, bukan di samping satu sama lain */
-@media screen and (max-width: 700px) {
+
+/* Style untuk layar dibawah 800px*/
+@media screen and (max-width: 800px) {
   .row,
   .navbar {
     flex-direction: column;
@@ -93,5 +123,39 @@ dua kolom bertumpuk satu sama lain, bukan di samping satu sama lain */
   .navbar a {
     margin: 0;
     width: 100%;
+  }
+  .img {
+    display: block;
+    max-width: 150px;
+  }
+
+  .main {
+    max-width: 100%;
+  }
+
+  .side {
+    width: 100%;
+  }
+
+  .side_foto {
+    display: flex;
+  }
+  .side_foto img {
+    width: 150px;
+  }
+
+  .social {
+    display: flex;
+    padding: 0;
+  }
+
+  .border_social {
+    width: 150px;
+    margin-left: 10px;
+  }
+
+  .border_social p {
+    margin-top: 20px;
+    font-size: 10px;
   }
 }

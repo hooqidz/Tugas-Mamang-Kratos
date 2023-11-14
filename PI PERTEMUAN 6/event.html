@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fungsi1() {
+        alert("Aku muncul saat di klik");
+      }
+      function fungsi2() {
+        alert("Aku muncul saat di sentuh");
+      }
+      function fungsi3() {
+        alert("Aku muncul saat menekan keyboard");
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Event JavaScript</h2>
+    <button type="button" onclick="fungsi1()">Klik tombol</button>
+    <p style="width: 100px; border: 1px solid black" onmouseover="fungsi2()">
+      Sentuh paragraf ini dan posisikan cursor di area ini
+    </p>
+    <input type="text" onkeypress="fungsi3()" placeholder="Ketikan Sesuatu!" />
+  </body>
+</html>
