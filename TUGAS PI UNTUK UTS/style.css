@@ -15,13 +15,13 @@ body {
   font-family: arial;
 }
 /* Header/logo Judul */
-.header {
+.erin-header {
   display: flex;
   justify-content: center;
 }
 
 /* Style pada navigasi */
-.navbar {
+.erin-navbar {
   display: flex;
   padding: 5px;
   background-color: var(--white-cream);
@@ -29,7 +29,7 @@ body {
   justify-content: center;
 }
 /* Style navigasi link */
-.navbar a {
+.erin-navbar a {
   color: var(--deep-ocean);
   margin-left: 20px;
   border-radius: 10px;
@@ -39,26 +39,24 @@ body {
   text-decoration: none;
 }
 /* ubah warna link menu ketika disentuh */
-.navbar a:hover {
+.erin-navbar a:hover {
   background-color: #ddd;
   color: black;
 }
-/* Kolom container */
-.row {
+/* Kolom container website */
+.erin-row {
   display: flex;
   flex-wrap: wrap;
 }
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/kiri kolom */
 
-/* Kolom utama */
-.main {
+/* Konten utama website */
+.erin-main {
   flex: 70%;
   background-color: white;
   padding: 20px;
 }
 
-.video {
+.erin-video {
   display: flex;
   background-color: var(--blue-ocean);
   border: 1px solid black;
@@ -66,16 +64,16 @@ body {
   padding: 10px;
 }
 
-.video-game {
+.erin-video-game {
   margin: 20px;
   justify-content: center;
 }
 
-#game-mov {
+#erin-game-pict {
   width: 500px;
 }
 
-.video-content video {
+.erin-video-content video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -83,25 +81,25 @@ body {
   height: 280px;
 }
 
-.game-review {
+.erin-game-review {
   display: flex;
 }
 
-.subtitle {
+.erin-subtitle {
   padding-right: 10px;
   min-width: 110px;
   color: var(--deep-ocean);
   font-weight: bold;
 }
 
-.price-holder {
+.erin-price-holder {
   display: flex;
   background-color: var(--dark-ocean);
   margin: 20px;
   height: 30px;
 }
 
-.border-price {
+.erin-border-price {
   font-weight: bold;
   color: white;
   display: flex;
@@ -111,7 +109,7 @@ body {
   width: 100%;
 }
 
-.buy-button {
+.erin-buy-button {
   width: 100px;
   height: 30px;
   color: black;
@@ -123,21 +121,21 @@ body {
   background-color: var(--yellow-on);
 }
 
-.buy {
+.erin-buy {
   text-decoration: none;
 }
 
-.buy :hover {
+.erin-buy :hover {
   background-color: var(--red-retro);
 }
 
-.isi {
+.erin-isi {
   font-weight: bold;
 }
 
-/* saat membuka halaman khusus untuk game */
+/* saat membuka halaman khusus untuk game start */
 
-.game-info {
+.erin-game-info {
   margin-top: 50px;
   border-radius: 5px;
   width: 100%;
@@ -146,31 +144,87 @@ body {
   background-color: var(--yellow-on);
 }
 
-.about-game {
+.erin-about-game {
   margin: 10px;
   width: fit-content;
 }
-.sys-req {
+.erin-sys-req {
   background-color: var(--deep-ocean);
 }
-.desc-game {
+.erin-desc-game {
   color: white;
   margin: 10px;
 }
 
-.req-span {
+.erin-req-span {
   color: var(--white-cream);
   font-weight: bold;
 }
 
-/* Side Content */
-.side {
+/* saat membuka halaman khusus untuk game end */
+
+/* Saat membuka halaman genre dan tema start */
+.erin-genre {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: grid;
+  background-color: var(--yellow-on);
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+}
+
+.erin-genre-list {
+  text-decoration: none;
+  border: 1px solid black;
+  display: flex;
+  background-color: var(--dark-ocean);
+  border-radius: 5px;
+  justify-content: center;
+  margin: 5px 20px;
+}
+
+.erin-tema {
+  width: 100%;
+  display: grid;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: var(--yellow-on);
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+}
+
+.erin-tema-list {
+  border: 1px solid black;
+  display: flex;
+  border-radius: 5px;
+  background-color: var(--dark-ocean);
+  justify-content: center;
+  text-decoration: none;
+  margin: 5px 20px;
+}
+
+.erin-tema-list:hover,
+.erin-genre-list:hover {
+  background-color: var(--blue-ocean);
+}
+
+.erin-tema-list p,
+.erin-genre-list p {
+  color: white;
+}
+
+/* Saat membuka halaman genre dan tema start */
+
+/* Side Content start */
+.erin-side {
   flex: 30%;
   background-color: var(--white-cream);
   padding: 20px;
 }
 
-.btn-selengkapnya {
+.erin-btn-selengkapnya {
   color: white;
   font-weight: bold;
   display: flex;
@@ -183,12 +237,14 @@ body {
   background-color: var(--dark-ocean);
 }
 
-.details :hover {
+.erin-details :hover {
   background-color: var(--yellow-on);
 }
 
-/* Footer */
-.footer {
+/* Side Content end */
+
+/* Footer start */
+.erin-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -198,91 +254,94 @@ body {
   border: 1px solid black;
 }
 
-.footer-btn {
+.erin-footer-btn {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: right;
 }
 
-.footer-btn img {
+.erin-footer-btn img {
   margin-left: 10px;
   width: 40px;
 }
 
-/* Style untuk layar dibawah 00px*/
+/* Footer end */
+
+/* Style untuk layar dibawah 700px*/
 @media screen and (max-width: 700px) {
-  .navbar {
+  .erin-navbar {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
 
-  .game-info {
+  .erin-game-info {
     display: flex;
     flex-direction: column;
   }
 
-  .navbar a {
+  .erin-navbar a {
     margin: 0;
 
     width: 50%;
   }
 
-  .main {
+  .erin-main {
     max-width: 100%;
   }
 
-  .video {
+  .erin-video {
     display: flex;
     flex-direction: column;
   }
 
   /* Ukuran Video Preview Game ketika di mobile */
-  .video-content video {
+  .erin-video-content video {
     width: 360px;
     height: 180px;
   }
 
-  .img-game {
+  .erin-img-game {
     display: flex;
 
     justify-content: center;
   }
 
-  #game-mov {
+  #erin-game-pict {
     display: flex;
     width: 300px;
   }
 
-  .img-title {
+  .erin-img-title {
     display: flex;
     justify-content: center;
   }
 
-  .side {
+  .erin-side {
     width: 100%;
   }
 
-  .side_foto {
+  .erin-side-foto {
     display: flex;
   }
-  .side_foto img {
+
+  .side-foto img {
     width: 100px;
   }
 
-  .social {
+  .erin-social {
     display: flex;
     padding: 0;
     justify-content: center;
   }
 
-  .border_social {
+  .erin-border-social {
     width: 150px;
   }
 
-  .border_social p {
+  .erin-border-social p {
     margin-top: 20px;
     font-size: 10px;
   }
